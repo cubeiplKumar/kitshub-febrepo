@@ -38,6 +38,29 @@ public class FreqTableExampleOriginal {
         catch(IOException e){
             System.out.println("Problem while reading from file. Unable to create freq table" + e);
         }
+		#Feature2.2 changes by Vivek on PaymentGatewayModule on oct 2023
+		 // method with no parameter
+  public void display1() {
+    System.out.println("Method without parameter");
+  }
+
+  // method with single parameter
+  public void display2(int a) {
+    System.out.println("Method with a single parameter: " + a);
+  }
+
+  public static void main(String[] args) {
+    
+    // create an object of Main
+    Main obj = new Main();
+
+    // calling method with no parameter
+    obj.display1();
+    
+    // calling method with the single parameter
+    obj.display2(24);
+  }
+}
         if( freqs.length == 0)
             System.out.println("No frequency table created due to problems when reading from file");
         else{
